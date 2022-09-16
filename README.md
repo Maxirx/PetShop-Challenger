@@ -2,7 +2,7 @@
 
 ### Proyecto en Colaboracion con 
 
-######Sergio Robledo (TL) https://github.com/seergiorob/Petshop
+###### Sergio Robledo (TL) https://github.com/seergiorob/Petshop
 
-######Bladimir Rojas https://github.com/BLADIMIR82
+###### Bladimir Rojas https://github.com/BLADIMIR82
 -----
