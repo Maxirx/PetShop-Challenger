@@ -111,11 +111,11 @@ inputSearch.addEventListener("keyup", search)
 
 function search(event) {
     console.log(event);
-    var val = event.target.value
+    var val = event?.target.value
     console.log(val);
 
 
-    articulosBuscados = articulosDeFarmaciaConAviso.filter(data => data.nombre.toLowerCase().includes(val.toLowerCase()))
+    articulosBuscados = articulosDeFarmaciaConAviso.filter(data => data.nombre?.toLowerCase().includes(val?.toLowerCase()))
     console.log(articulosBuscados);
     cards(articulosBuscados)
 
@@ -214,7 +214,7 @@ function cards(data) {
 
 }
 cards()
-getID()
+
 
 
 /* save_localstorage() */

@@ -380,9 +380,10 @@ function init() {
                               `
 
     })
-    document.getElementById('items').innerHTML = templateHtmlFavorite2
+    const items = document.getElementById('items')
+    items && (items.innerHTML = templateHtmlFavorite2)
 }
-init()
+
 
 //FUNCION PARA REMOVER ITEMS DEL LOCALSTORAGE
 
@@ -395,7 +396,7 @@ function removeID(event) {
     console.log(guardado)
 }
 
-document.getElementById("clear").addEventListener("click", function () {
+document.getElementById("clear")?.addEventListener("click", function () {
     //localStorage.clear()
     localStorage.removeItem("favoritos")
 
