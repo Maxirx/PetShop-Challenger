@@ -56,7 +56,7 @@ function getID(event) {
 
 
 
-function Separar(params) {
+function Separar(art) {
     console.log(articulosDeFarmacia);
 
 
@@ -100,7 +100,7 @@ function Separar(params) {
     console.log(articulosDeFarmaciaConAviso);
     cards(articulosDeFarmaciaConAviso)
 }
-Separar()
+
 
 
 var inputSearch = document.getElementById("Input")
