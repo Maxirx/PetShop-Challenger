@@ -390,7 +390,7 @@ init()
 
 function removeID(event) {
 
-    guardado = guardado.filter(idguardado => idguardado != event) //localstorage guardado --- id
+    guardado = guardado.filter(idguardado => idguardado != event)
     localStorage.setItem('favoritos', JSON.stringify(guardado))
     //localStorage.setItem("cargaControl", "Secargo")
     init()
@@ -406,6 +406,7 @@ document.getElementById("clear").addEventListener("click", function () {
 var counter = []
 //FUNCIONES PARA AGRGAR DATOS AL CONTADOR
 function addQ(event) {
+    console.log(event);
     counter = []
     counter.push(...toDisplayFavorite.filter(articulos => articulos._id == event))
     counter.map(function anonima(arti) {
