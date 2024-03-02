@@ -9,10 +9,8 @@ var articulosBuscados = []
 
 
 async function obtenerDatos() {
-    await fetch("https://apipetshop.herokuapp.com/api/articulos")
-        .then(respuestas => respuestas.json())
-        .then(json => articulos.push(...json.response))
-    console.table(articulos);
+    articulos = obtenerProductosParaImprimir()
+    console.log(articulos);
 
 
 
@@ -40,7 +38,7 @@ var favorites = JSON.parse(localStorage.getItem("favoritos")) || [];
 
 var clearFav;
 function getID(event) {
-    console.log(typeof (event));
+    console.log(event);
 
     favorites.unshift(event);
     console.log(favorites);
@@ -68,8 +66,7 @@ function separaryunir(articulosDeJugueteria) {
                     precio: element.precio,
                     stock: element.stock,
                     imagen: element.imagen,
-                    tipo: element.tipo,
-                    __v: element.__v,
+                    tipo: element.tipo
                 }
             )
         } else {
@@ -81,7 +78,7 @@ function separaryunir(articulosDeJugueteria) {
                 stock: element.stock,
                 imagen: element.imagen,
                 tipo: element.tipo,
-                __v: element.__v,
+
                 aviso: "ULTIMAS UNIDADES!"
             })
         }
@@ -109,12 +106,12 @@ console.log(articulosDeJugueteriaConAviso);
 
 function search(event) {
     console.log(event);
-    var val = event.target.value
+    var val = event?.target.value
     console.log(val);
     console.log(articulosDeJugueteriaConAviso);
 
 
-    articulosBuscados = (articulosDeJugueteriaConAviso.filter(data => data.nombre.toLowerCase().includes(val.toLowerCase())))
+    articulosBuscados = (articulosDeJugueteriaConAviso.filter(data => data.nombre?.toLowerCase().includes(val?.toLowerCase())))
     console.log(articulosBuscados);
     cards(articulosBuscados)
 }
@@ -213,7 +210,7 @@ function cards(data) {
 
 }
 cards()
-getID()
+
 
 /* var carry = JSON.parse(localStorage.getItem('carrito')) || []
 

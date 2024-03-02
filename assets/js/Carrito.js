@@ -262,9 +262,7 @@ var artiEnArray = []
 //FUNCION PARA LLAMAR AL DATO COMPLETO DE LA API Y FILTRAR POR LOS ID GUARDADOS EN LOCALSTORAGE
 
 async function obtenerDatos() {
-    await fetch("https://apipetshop.herokuapp.com/api/articulos")
-        .then(respuestas => respuestas.json())
-        .then(json => arti.push(...json.response))
+    arti = obtenerProductosParaImprimir()
 
     arti.forEach(element => {
 
@@ -382,7 +380,7 @@ function init() {
                               `
 
     })
-    document.querySelector('#items').innerHTML = templateHtmlFavorite2
+    document.getElementById('items').innerHTML = templateHtmlFavorite2
 }
 init()
 
@@ -426,3 +424,4 @@ function restQ(event) {
 
     init()
 }
+

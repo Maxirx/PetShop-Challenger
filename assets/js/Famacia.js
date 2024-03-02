@@ -12,10 +12,7 @@ console.log(articulosDeFarmacia);
 
 
 async function obtenerDatos() {
-    await fetch("https://apipetshop.herokuapp.com/api/articulos")
-        .then(respuestas => respuestas.json())
-        .then(json => articulos.push(...json.response))
-    console.table(articulos);
+    articulos = obtenerProductosParaImprimir()
 
 
 
