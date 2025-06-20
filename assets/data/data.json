@@ -1,0 +1,148 @@
+{
+    "response": [
+        {
+            "_id": "J001",
+            "nombre": "Pelota de Fútbol",
+            "descripcion": "Pelota de fútbol de tamaño oficial, ideal para entrenamientos.",
+            "precio": 1200,
+            "stock": 20,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Pelota+de+F%C3%BAtbol",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J002",
+            "nombre": "Muñeca de Trapo",
+            "descripcion": "Muñeca suave y colorida, perfecta para niños pequeños.",
+            "precio": 800,
+            "stock": 15,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Mu%C3%B1eca+de+Trapo",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J003",
+            "nombre": "Rompecabezas 1000 Piezas",
+            "descripcion": "Rompecabezas desafiante con imagen de paisaje montañoso.",
+            "precio": 1500,
+            "stock": 10,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Rompecabezas+1000+Piezas",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J004",
+            "nombre": "Tren Eléctrico",
+            "descripcion": "Set de tren eléctrico con vías y accesorios incluidos.",
+            "precio": 2500,
+            "stock": 5,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Tren+El%C3%A9ctrico",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J005",
+            "nombre": "Bicicleta Infantil",
+            "descripcion": "Bicicleta de 20 pulgadas con frenos y ruedines.",
+            "precio": 3500,
+            "stock": 8,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Bicicleta+Infantil",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J006",
+            "nombre": "Set de Cocina de Juguete",
+            "descripcion": "Set completo con utensilios y electrodomésticos de juguete.",
+            "precio": 1800,
+            "stock": 12,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Set+de+Cocina+de+Juguete",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J007",
+            "nombre": "Pista de Carreras",
+            "descripcion": "Pista de carreras con coches a escala y rampas.",
+            "precio": 2200,
+            "stock": 6,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Pista+de+Carreras",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "J008",
+            "nombre": "Pelota Saltarina",
+            "descripcion": "Pelota que rebota de manera impredecible, divertida para niños.",
+            "precio": 600,
+            "stock": 30,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Pelota+Saltarina",
+            "tipo": "juguete"
+        },
+        {
+            "_id": "M001",
+            "nombre": "Paracetamol 500mg",
+            "descripcion": "Analgésico y antipirético para aliviar dolores leves.",
+            "precio": 200,
+            "stock": 50,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Paracetamol+500mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M002",
+            "nombre": "Ibuprofeno 400mg",
+            "descripcion": "Antiinflamatorio no esteroide para reducir fiebre e inflamación.",
+            "precio": 250,
+            "stock": 40,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Ibuprofeno+400mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M003",
+            "nombre": "Amoxicilina 500mg",
+            "descripcion": "Antibiótico utilizado para tratar infecciones bacterianas.",
+            "precio": 300,
+            "stock": 35,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Amoxicilina+500mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M004",
+            "nombre": "Loratadina 10mg",
+            "descripcion": "Antihistamínico para aliviar síntomas de alergias.",
+            "precio": 150,
+            "stock": 60,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Loratadina+10mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M005",
+            "nombre": "Omeprazol 20mg",
+            "descripcion": "Inhibidor de la bomba de protones para tratar problemas gástricos.",
+            "precio": 180,
+            "stock": 45,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Omeprazol+20mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M006",
+            "nombre": "Ranitidina 150mg",
+            "descripcion": "Antihistamínico H2 para reducir la producción de ácido gástrico.",
+            "precio": 160,
+            "stock": 55,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Ranitidina+150mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M007",
+            "nombre": "Dextrometorfano 15mg",
+            "descripcion": "Antitusígeno utilizado para aliviar la tos.",
+            "precio": 130,
+            "stock": 65,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Dextrometorfano+15mg",
+            "tipo": "medicamento"
+        },
+        {
+            "_id": "M008",
+            "nombre": "Clorfenamina 4mg",
+            "descripcion": "Antihistamínico para aliviar síntomas de alergias y resfriados.",
+            "precio": 140,
+            "stock": 70,
+            "imagen": "https://via.placeholder.com/150x150.png?text=Clorfenamina+4mg",
+            "tipo": "medicamento"
+        }
+    ]
+}

@@ -262,7 +262,7 @@ var artiEnArray = []
 //FUNCION PARA LLAMAR AL DATO COMPLETO DE LA API Y FILTRAR POR LOS ID GUARDADOS EN LOCALSTORAGE
 
 async function obtenerDatos() {
-    await fetch("https://apipetshop.herokuapp.com/api/articulos")
+    await fetch("./assets/data/data.json")
         .then(respuestas => respuestas.json())
         .then(json => arti.push(...json.response))
 
@@ -333,8 +333,8 @@ function init() {
     // </div>
     // <div class="dataCard">
     // <h2>${articulo.nombre}</h2>
-    
-       
+
+
     //     <button class="botonCards"><a href="../detalle.html?id=${articulo._id}">Ver mas</a></button>
     //     <button class="botonCards" onClick="removeID('${articulo._id}')">remove Favorite</button>
     //     <div class="counterFav">
@@ -342,7 +342,7 @@ function init() {
     //     <p class="itemsCount" >${articulo.cantidad}</p>
     //     <button class="itemsCount" onClick="addQ('${articulo._id}')">+</button>
     // </div>
-        
+
     // </div>
     // </div>
     // `
@@ -350,7 +350,7 @@ function init() {
     // })
 
     // document.querySelector('#CarritoDetalle').innerHTML = templateHtmlFavorite //Imprimimos en html las cards guardadas en el variable html
-    
+
     let templateHtmlFavorite2 = ""
 
     toDisplayFavorite.map(articulo => {
