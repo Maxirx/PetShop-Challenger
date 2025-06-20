@@ -354,8 +354,8 @@ function init() {
     let templateHtmlFavorite2 = ""
 
     toDisplayFavorite.map(articulo => {
-
-        templateHtmlFavorite2 += `
+        articulo.cantidad > 0 && (
+            templateHtmlFavorite2 += `
         <tr>
                                   <td class="product__cart__item">
                                       <div class="product__cart__item__pic">
@@ -380,9 +380,10 @@ function init() {
                                   <td><button class="restasumx" onClick="removeID('${articulo._id}')"> x </button></td>
                               </tr>
                               `
-
+        )
     })
-    document.querySelector('#items').innerHTML = templateHtmlFavorite2
+    document.querySelector('#items') && (document.querySelector('#items').innerHTML = templateHtmlFavorite2)
+
 }
 init()
 
@@ -415,13 +416,22 @@ function addQ(event) {
 
     })
 
+
     init()
 }
 //FUNCION PARA RESTAR DATOS AL CONTADOR
 function restQ(event) {
     counter = []
     counter.push(...toDisplayFavorite.filter(articulos => articulos._id == event))
-    counter.map(articulos => articulos.cantidad > 0 ? articulos.cantidad-- : articulos.cantidad)
+    counter.map(articulos => articulos.cantidad > 0 ? articulos.cantidad-- : articulos.cantidad = 0)
+
+
+
+    toDisplayFavorite.map(articulos => {
+        articulos.cantidad == 0 &&
+            removeID(articulos._id)
+
+    })
 
 
     init()
