@@ -109,7 +109,7 @@ console.log(articulosDeJugueteriaConAviso);
 
 function search(event) {
     console.log(event);
-    var val = event.target.value
+    var val = event?.target?.value
     console.log(val);
     console.log(articulosDeJugueteriaConAviso);
 

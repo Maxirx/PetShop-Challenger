@@ -148,7 +148,7 @@ function removeID(event) {
     console.log(guardado)
 }
 
-document.getElementById("clear").addEventListener("click", function () {
+document.getElementById("clear")?.addEventListener("click", function () {
     //localStorage.clear()
     localStorage.removeItem("favoritos")
 

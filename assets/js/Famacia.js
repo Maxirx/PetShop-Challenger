@@ -53,7 +53,7 @@ function getID(event) {
 
     localStorage.setItem("favoritos", JSON.stringify(clearFav));
 
-    init()
+    cards()
 
 }
 
@@ -114,7 +114,7 @@ inputSearch.addEventListener("keyup", search)
 
 function search(event) {
     console.log(event);
-    var val = event.target.value
+    var val = event?.target?.value
     console.log(val);
 
 
